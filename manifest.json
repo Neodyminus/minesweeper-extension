@@ -1,0 +1,20 @@
+{
+    "name": "Minesweeper Helper",
+    "description": "Minesweeper AI for minesweeper.online",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://minesweeper.online/*"
+            ],
+            "js": ["solver.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Minesweeper Helper",
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": ["storage", "activeTab"]
+}

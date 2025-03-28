@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#AreaBlock .cell {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#AreaBlock .cell.safe {
+    background-color: green !important;
+}
+
+#AreaBlock .cell.mine {
+    background-color: red !important;
+}
+
+#AreaBlock .cell.probability {
+    font-size: 12px;
+    color: blue;
+}
